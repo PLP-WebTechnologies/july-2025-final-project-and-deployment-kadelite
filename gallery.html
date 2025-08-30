@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio gallery of projects." />
+    <title>Gallery — MyPortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="logo" href="index.html" aria-label="Go to home"
+          >MyPortfolio</a
+        >
+        <button
+          id="navToggle"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
+        <nav id="primaryNav" class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="container reveal">
+        <h1>Gallery</h1>
+        <p class="lead">A few recent projects and experiments.</p>
+        <div class="gallery-grid">
+          <figure class="tile">
+            <img
+              src="https://picsum.photos/seed/a/600/400"
+              alt="Project A sample image"
+            />
+            <figcaption>Project A</figcaption>
+          </figure>
+          <figure class="tile">
+            <img
+              src="https://picsum.photos/seed/b/600/400"
+              alt="Project B sample image"
+            />
+            <figcaption>Project B</figcaption>
+          </figure>
+          <figure class="tile">
+            <img
+              src="https://picsum.photos/seed/c/600/400"
+              alt="Project C sample image"
+            />
+            <figcaption>Project C</figcaption>
+          </figure>
+          <figure class="tile">
+            <img
+              src="https://picsum.photos/seed/d/600/400"
+              alt="Project D sample image"
+            />
+            <figcaption>Project D</figcaption>
+          </figure>
+          <figure class="tile">
+            <img
+              src="https://picsum.photos/seed/e/600/400"
+              alt="Project E sample image"
+            />
+            <figcaption>Project E</figcaption>
+          </figure>
+          <figure class="tile">
+            <img
+              src="https://picsum.photos/seed/f/600/400"
+              alt="Project F sample image"
+            />
+            <figcaption>Project F</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <p>&copy; <span id="year"></span> MyPortfolio. All rights reserved.</p>
+        <div class="socials" aria-label="Social links">
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="https://github.com/kadelite" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/adelekedev/" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

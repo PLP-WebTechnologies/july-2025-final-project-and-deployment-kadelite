@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Get in touch via the contact form." />
+    <title>Contact — MyPortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="logo" href="index.html" aria-label="Go to home"
+          >MyPortfolio</a
+        >
+        <button
+          id="navToggle"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
+        <nav id="primaryNav" class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="container reveal">
+        <h1>Contact</h1>
+        <p class="lead">Have a project in mind? Let’s talk.</p>
+        <form id="contactForm" novalidate class="form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+            />
+            <small class="error" id="nameError" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+            <small class="error" id="emailError" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <small class="error" id="messageError" aria-live="polite"></small>
+          </div>
+          <div class="actions">
+            <button class="btn primary" type="submit">Send Message</button>
+            <span id="formStatus" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <p>&copy; <span id="year"></span> MyPortfolio. All rights reserved.</p>
+        <div class="socials" aria-label="Social links">
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="https://github.com/kadelite" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/adelekedev/" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

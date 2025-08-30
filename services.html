@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Available web development services." />
+    <title>Services — MyPortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="logo" href="index.html" aria-label="Go to home"
+          >MyPortfolio</a
+        >
+        <button
+          id="navToggle"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
+        <nav id="primaryNav" class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="container reveal">
+        <h1>Services</h1>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Website Development</h3>
+            <p>
+              Custom, responsive sites built with semantic HTML and modern
+              CSS/JS.
+            </p>
+          </article>
+          <article class="card">
+            <h3>UI Prototyping</h3>
+            <p>
+              Clickable prototypes to test ideas quickly before development.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Performance Audit</h3>
+            <p>
+              Measure, diagnose, and improve Core Web Vitals and accessibility.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <p>&copy; <span id="year"></span> MyPortfolio. All rights reserved.</p>
+        <div class="socials" aria-label="Social links">
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="https://github.com/kadelite" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/adelekedev/" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
